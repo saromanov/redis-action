@@ -1,6 +1,9 @@
 name: 'Redis server'
 description: 'Setup Redis server'
 author: 'Saromanov'
+branding:
+  icon: 'database'
+  color: 'red'
 inputs:
   version:
     description: 'Version of Redis to use'
