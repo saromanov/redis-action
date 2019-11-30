@@ -1,0 +1,19 @@
+name: 'Redis server'
+description: 'Setup Redis server'
+author: 'Saromanov'
+inputs:
+  version:
+    description: 'Version of Redis to use'
+    required: false
+    default: 'latest'
+  port_internal:
+    description: 'Internal port'
+    required: false
+    default: 6379
+  port_external:
+    description: 'External port'
+    required: false
+    default: 6379
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
